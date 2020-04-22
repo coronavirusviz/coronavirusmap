@@ -4,13 +4,13 @@ lang="en">
 <head>             
   <meta charset="utf-8">
   <title>Coronavirus Map</title>
-  <link rel="canonical" href="https://www.coronavirusmap.pro">
-  <link rel="alternative" hreflang="fr" href="https://www.coronavirusmap.pro/es.html">
+  <link rel="canonical" href="https://coronavirusviz.github.io">
+  <link rel="alternative" hreflang="fr" href="https://coronavirusviz.github.io/es.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="amp-google-client-id-api" content="googleanalytics">
   <meta name="description" content="🌎  Coronavirus map: how Covid-19 is spreading across the world. Tracking the Global Outbreak: Confirmed cases of Covid-19 have spanned the globe (Johns Hopkins) ✔️">
   <link rel="shortcut icon" href="./img/icons/favicon.png">
-  <meta property="og:url" content="https://www.coronavirusmap.pro" />
+  <meta property="og:url" content="https://coronavirusviz.github.io" />
   <meta property="og:title" content="Global Coronavirus interactive map in real-time" />
   <meta property="og:description" content="coronavirusmap.pro is a geospatial data visualizations of the coronavirus pandemic." />
   <meta property="og:site_name" content="coronavirusmap.pro" />
@@ -237,8 +237,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
 
         .upperInfo {
-            background: rgb(243, 238, 163);
-            border-radius: 7px;
+            background: rgba(243, 238, 163, 0);
+            border-radius: 0px;
 
         }
 
@@ -333,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="leaflet-sidebar-pane" id="home">
             <p class="leaflet-sidebar-header">
                 <ul class="list-unstyled list-social">
-                         <li><a href="https://www.coronavirusmap.pro/es.html">
+                         <li><a href="https://coronavirusviz.github.io/es.html">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="30" height="30"
                             viewBox="0 0 48 48"
@@ -350,11 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="lorem" style="margin-top:20px"><a href="https://roqueleal.me" target="_blank">
                 Roque Leal</a>
             <h4 style="margin-bottom:10px; font-family:'Ubuntu',sans-serif; font-weight: bold;">Global Coronavirus Map</br>(Updated Daily)</h4>
-            <div class="upperInfo"> 
-                <h5 id="totalConfirmed"></h5>
-                <h5 id="totalDeath"></h5>
-                <h5 id="totalRecovered"></h5>
-            </div>
+            
             
             <div class="firstEverInfo"> 
 
@@ -1348,8 +1344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           //console.log(worldTotal_Confirmed_String)
 
 
-           document.getElementById("totalConfirmed").innerHTML="<b>Total Confirmed Cases:</b> "+worldTotal_Confirmed_String
-
+         
             //console.log(sortedConfirmedLabels)
             //console.log(sortedConfirmedValues)
 
@@ -1633,8 +1628,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
            stringCreate()
 
-            document.getElementById("totalDeath").innerHTML="<b>Total Death:</b> "+worldTotal_Deaths_String
-
+          
             //console.log(sortedConfirmedLabels)
             //console.log(sortedConfirmedValues)
 
